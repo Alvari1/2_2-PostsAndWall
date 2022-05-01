@@ -12,7 +12,7 @@ data class Post(
     val copyright: UInt = 0U,
     val likes: UInt = 0U,
     val reposts: UInt = 0U,
-    val views: UInt = 0U,
+    val views: Views = Views(count = 0U),
     val postType: PostTypes = PostTypes.post,
     val signerId: UInt = 0U,
     val canPin: Boolean = true,
